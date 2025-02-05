@@ -2,19 +2,19 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #fff; /* White background */
-    color: #333; /* Dark text color */
+    background-color: #fff; 
+    color: #333; 
     line-height: 1.6;
 }
 
 a {
     text-decoration: none;
-    color: #ff3928; /* Secondary color for links */
+    color: #ff3928; 
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #d91c0d; /* Darker secondary color on hover */
+    color: #d91c0d;
 }
 
 /* Navbar Styling */.navbar {
@@ -23,7 +23,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee; /* Subtle border */
+    border-bottom: 1px solid #eee; 
 }.logo {
     max-height: 80px;
 }.nav-links {
@@ -45,12 +45,12 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #333; /* Dark heading color */
+    color: #333; 
 }
 
 /* Footer Styling */
 footer {
-    background-color: #000; /* Black background for footer */
+    background-color: #000; 
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -69,7 +69,7 @@ input[type="text"], input[type="email"] {
 }
 
 input[type="submit"] {
-    background-color: #ff3928; /* Secondary color for button */
+    background-color: #ff3928; 
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -79,7 +79,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #d91c0d; /* Darker secondary color on hover */
+    background-color: #d91c0d; 
 }
 
 /* Services Page Styling */.services ul {
