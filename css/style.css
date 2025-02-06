@@ -91,3 +91,26 @@ input[type="submit"]:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
+/* Dropdown Styling */
+#languageSwitcher {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    appearance: none;
+}
+
+/* Hover effect */
+#languageSwitcher:hover {
+    background-color: #f5f5f5;
+}
+
+/* Focus effect */
+#languageSwitcher:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 57, 40, 0.3);
+}
