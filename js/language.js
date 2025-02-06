@@ -7,11 +7,11 @@ const translations = {
             contact: "Contact"
         },
         home: {
-            title: "Welcome to TechVerse Innovations",
-            description: "We are a leading technology company..."
+            title: "Innovating Today, Shaping Tomorrow",
+            description: "Learn More"
         },
         about: {
-            title: "About Us",
+            title: "Who we are",
             description: "Learn more about our company and our mission..."
         },
         contact: {
@@ -21,7 +21,7 @@ const translations = {
             submitButton: "Submit"
         },
         services: {
-            title: "Our Services",
+            title: "What we offer",
             service1: "Service 1",
             service2: "Service 2",
             service3: "Service 3"
@@ -93,8 +93,9 @@ function changeLanguage(lang) {
 
     if (document.getElementById("home-title")) {
         document.getElementById("home-title").textContent = translations[lang].home.title;
-        document.getElementById("home-description").textContent = translations[lang].home.description;
+        document.getElementById("learn-more-link").textContent = translations[lang].home.description;
     }
+
     if (document.getElementById("about-title")) {
         document.getElementById("about-title").textContent = translations[lang].about.title;
         document.getElementById("about-description").textContent = translations[lang].about.description;
