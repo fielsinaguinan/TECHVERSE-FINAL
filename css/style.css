@@ -1,15 +1,20 @@
 /* General Styling */
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
-    background-color: #fff; 
-    color: #333; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
     line-height: 1.6;
 }
 
 a {
     text-decoration: none;
-    color: #ff3928; 
+    color: #ff3928;
     transition: color 0.3s ease;
 }
 
@@ -17,116 +22,129 @@ a:hover {
     color: #d91c0d;
 }
 
-/* Navbar Styling */.navbar {
+/* Navbar Styling */
+.navbar {
     background-color: #fff;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee; 
-}.logo {
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
     max-height: 80px;
-}.nav-links {
+}
+
+.nav-links {
     display: flex;
-}.nav-links a {
+}
+
+.nav-links a {
     margin-left: 2rem;
     font-weight: 500;
+    color: #333;
 }
 
-main {
-    height: 75vh;
-    max-width: 960px;
-    margin: 2rem auto;
-    align-content: center;
-    background-color: #fff;
+.nav-links a:hover {
+    color: #ff3928;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #333; 
-}
-
-/* Footer Styling */
-footer {
-    background-color: #000; 
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}.footer-content p {
-    margin: 0.5rem 0;
-}
-
-/* Contact Form Styling */
-input[type="text"], input[type="email"] {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background-color: #ff3928; 
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #d91c0d; 
-}
-
-/* Services Page Styling */.services ul {
-    list-style: none;
-    padding: 0;
-}.services li {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-/* Dropdown Styling */
+/* Language Switcher */
 #languageSwitcher {
     background-color: #fff;
     color: #333;
     border: 1px solid #ddd;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
     cursor: pointer;
     appearance: none;
 }
 
-/* Hover effect */
 #languageSwitcher:hover {
     background-color: #f5f5f5;
 }
 
-/* Focus effect */
 #languageSwitcher:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(255, 57, 40, 0.3);
 }
 
+/* Card Styling */
+.card {
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    margin: 4rem auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+   
+    padding-top: 30%; 
+}
+
+/* Slideshow Styling */
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+#home-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
 #home-description {
-    background-color: #ff3928; /* Example background color */
-    color: #fff; /* Example text color */
-    padding: 0.5rem 1rem; /* Example padding */
+    background-color: #ff3928;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 4px; /* Example border radius */
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.2rem;
 }
 
 #home-description:hover {
-    background-color: #d91c0d; /* Example hover color */
+    background-color: #d91c0d;
+    transform: scale(1.05);
 }
 
 #home-description a {
@@ -134,115 +152,14 @@ input[type="submit"]:hover {
     text-decoration: none;
 }
 
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222;
-    padding: 15px 30px;
-}
-
-.navbar .logo {
-    height: 50px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #00bcd4;
-}
-
-/* Language Switcher */
-#languageSwitcher {
-    padding: 5px;
-    font-size: 16px;
-}
-
-/* Services Section */
-.services {
+/* Footer Styling */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    padding: 50px 20px;
 }
 
-.section-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-/* Services Grid */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Service Cards */
-.service-card {
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Make the whole card clickable */
-.service-card a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-/* Service Images */
-.service-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* Card Content */
-.card-content {
-    padding: 15px;
-}
-
-.card-content h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #222;
-}
-
-.card-content p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Footer */
-.footer-content {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 50px;
-}
-
-.service-img {
-    width: 100%;
-    height: 250px;  /* Increase the height from 200px to 250px */
-    object-fit: cover;
+.footer-content p {
+    margin: 0.5rem 0;
 }
