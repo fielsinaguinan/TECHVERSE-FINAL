@@ -164,45 +164,71 @@ footer {
     margin: 0.5rem 0;
 }
 
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Section Title */
+#services-title {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Services Container */
 .services-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 20px;
-    }
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
 
+/* Service Cards */
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Images */
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .service-card {
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        text-align: center;
-        width: 30%;
-        transition: transform 0.3s ease-in-out;
+        width: 90%;
     }
-
-    .service-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .service-card img {
-        width: 100%;
-        height: auto;
-        border-bottom: 2px solid #ddd;
-    }
-
-    .card-content {
-        padding: 15px;
-    }
-
-    @media (max-width: 768px) {
-        .services-container {
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .service-card {
-            width: 90%;
-        }
+}
     
