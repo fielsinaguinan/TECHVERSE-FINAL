@@ -5,39 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechVerse Innovations - Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/slideshow.js" defer></script>
+    <script src="js/language.js" defer></script>
 </head>
 <body>
-<nav class="navbar">
-    <img src="img/logo.png" alt="TechVerse Logo" class="logo">
-    <div class="nav-links">
-        <a href="index.html" id="nav-home">Home</a>
-        <a href="about.html" id="nav-about">About</a>
-        <a href="services.html" id="nav-services">Services</a>
-        <a href="contact.html" id="nav-contact">Contact</a>
-    </div>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="TechVerse Logo" class="logo">
+        <div class="nav-links">
+            <a href="index.html" id="nav-home">Home</a>
+            <a href="about.html" id="nav-about">About</a>
+            <a href="services.html" id="nav-services">Services</a>
+            <a href="contact.html" id="nav-contact">Contact</a>
+        </div>
+        <select id="languageSwitcher">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+            <option value="jp">日本語</option>
+        </select>
+    </nav>
 
+    <main>
+        <div class="card">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="img/slideshow1.webp" alt="TechVerse Innovation Slide 1">
+                </div>
+                <div class="slide fade">
+                    <img src="img/slideshow2.webp" alt="TechVerse Innovation Slide 2">
+                </div>
+                <div class="slide fade">
+                    <img src="img/slideshow3.webp" alt="TechVerse Innovation Slide 3">
+                </div>
+                <div class="overlay">
+                    <h1 id="home-title">Innovating Today, Shaping Tomorrow</h1>
+                    <button id="home-description">
+                        <a href="about.html" id="learn-more-link">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <select id="languageSwitcher">
-        <option value="en">English</option>
-        <option value="zh">中文</option>
-        <option value="jp">日本語</option>
-    </select>
-</nav>
-
-<main>
-    <h1 id="home-title">Innovating Today, Shaping Tomorrow</h1>
-    <button id="home-description">
-        <a href="about.html" id="learn-more-link">Learn More</a>
-    </button>
-</main>
-
-<footer>
-    <div class="footer-content">
-        <p>© 2025 TechVerse Innovations</p>
-        <p>Los Angeles • Manila • Japan</p>
-    </div>
-</footer>
-
-<script src="js/language.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 TechVerse Innovations</p>
+            <p>Los Angeles • Manila • Japan</p>
+        </div>
+    </footer>
 </body>
 </html>
