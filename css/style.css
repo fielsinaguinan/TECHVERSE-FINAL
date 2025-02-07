@@ -152,25 +152,21 @@ a:hover {
     text-decoration: none;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
+.services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+   }
 
-.footer-content p {
-    margin: 0.5rem 0;
-}
-
-.service-card {
+   .service-card {
       position: relative;
       width: 100%;
       overflow: hidden;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 5px solid #333; /* Adding a solid border around the card */
+      border-radius: 12px; /* Rounded corners for the frame */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for the frame */
+      background-color: #fff;
+      transition: all 0.3s ease-in-out;
    }
 
    .service-card img {
@@ -191,8 +187,13 @@ footer {
       transition: visibility 0.3s, opacity 0.3s ease-in-out;
    }
 
+   .service-card:hover {
+      transform: translateY(-5px); /* Slight lift effect when hovering */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+   }
+
    .service-card:hover img {
-      transform: scale(1.1);
+      transform: scale(1.05); /* Slight zoom effect on image */
    }
 
    .service-card:hover .card-content {
@@ -216,5 +217,4 @@ footer {
       font-size: 1em;
       margin-bottom: 20px;
    }
-
 
