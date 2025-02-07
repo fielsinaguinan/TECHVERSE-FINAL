@@ -163,3 +163,46 @@ footer {
 .footer-content p {
     margin: 0.5rem 0;
 }
+
+.services-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .service-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        text-align: center;
+        width: 30%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .services-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .service-card {
+            width: 90%;
+        }
+    
