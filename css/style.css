@@ -184,40 +184,22 @@ body {
     margin-bottom: 20px;
 }
 
-/* Services Container - Forces Horizontal Layout */
-.services-container {
+/* Assuming the parent container wraps the service boxes */
+.container {
     display: flex;
-    justify-content: center;  /* Centers the content */
-    gap: 20px;
-    padding: 20px;
-    overflow-x: auto;  /* Enables horizontal scrolling if needed */
-    white-space: nowrap; /* Prevents wrapping */
+    flex-direction: row; /* Align items in a horizontal row */
+    justify-content: space-around; /* Distribute evenly */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
 
-/* Service Cards */
-.service-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+.service-box {
+    width: 30%; /* Adjust width as needed */
     text-align: center;
-    width: 300px; /* Fixed width to maintain alignment */
-    flex-shrink: 0; /* Prevents shrinking */
-    transition: transform 0.3s ease-in-out;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-}
 
-/* Images */
-.service-card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #ddd;
-}
-
-/* Card Content */
-.card-content {
-    padding: 15px;
-}
