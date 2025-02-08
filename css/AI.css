@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Using system fonts */
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -15,6 +15,8 @@ body {
 
 /* Main Title Styling */
 #ai-solutions-title {
+    font-size: 2.8rem;
+    color: #333;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -24,6 +26,8 @@ body {
 
 /* Main Description Styling */
 #ai-solutions-description {
+    font-size: 1.1rem;
+    color: #555;
     line-height: 1.7;
     text-align: center;
     margin-bottom: 30px;
@@ -31,6 +35,8 @@ body {
 
 /* Section Title Styling */
 .section-title {
+    font-size: 2rem;
+    color: #007BFF;
     margin-top: 40px;
     margin-bottom: 15px;
     text-align: center;
@@ -42,6 +48,7 @@ ul {
     list-style-type: none;
     padding-left: 0;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     max-width: 900px;
     margin: 0 auto;
@@ -54,6 +61,8 @@ ul li {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: #333;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -65,6 +74,8 @@ ul li:hover {
 
 /* Sub-Heading Styling */
 h3 {
+    font-size: 1.8rem;
+    color: #333;
     margin-top: 40px;
     margin-bottom: 15px;
     text-align: center;
@@ -72,6 +83,8 @@ h3 {
 
 /* Subtext Description Styling */
 main p {
+    font-size: 1rem;
+    color: #555;
     text-align: center;
     line-height: 1.6;
     margin-top: 20px;
@@ -88,6 +101,7 @@ main p {
     }
 
     #ai-solutions-description {
+        font-size: 1rem;
         margin-bottom: 20px;
     }
 
@@ -102,6 +116,7 @@ main p {
     }
 
     ul li {
+        font-size: 1rem;
         padding: 15px;
     }
 
