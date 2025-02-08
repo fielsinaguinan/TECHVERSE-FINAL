@@ -17,6 +17,7 @@ body {
 
 main {
     flex: 1 0 auto;
+    background-color: #222;
 }
 
 a {
@@ -32,12 +33,17 @@ a:hover {
 /* Navbar Styling */
 .navbar {
     position: sticky;
+    top: 0;
+    width: 100%;
     background-color: #fff;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #eee;
+    z-index: 1000;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -78,30 +84,15 @@ a:hover {
     box-shadow: 0 0 0 2px rgba(255, 57, 40, 0.3);
 }
 
-/* Card Styling */
-.card {
-    max-width: 1000px;
-    width: 100%;
-    position: relative;
-    margin: 4rem auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-
-   
-    padding-top: 30%; 
-}
-
 /* Slideshow Styling */
 .slideshow-container {
-    display: flex;
-    align-self: center;
-    position: absolute;
     width: 100%;
-    height: 75%; 
+    height: 75vh; 
     overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide {
@@ -155,82 +146,231 @@ a:hover {
     transform: scale(1.05);
 }
 
-#home-description a {
-    color: inherit;
-    text-decoration: none;
+/* Card Styling */
+.card {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    margin: 4rem auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
 }
 
+.card img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+/* Services Grid */
 .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-   }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+}
 
-   .service-card {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      border: 5px solid #333; /* Adding a solid border around the card */
-      border-radius: 12px; /* Rounded corners for the frame */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for the frame */
-      background-color: #fff;
-      transition: all 0.3s ease-in-out;
-   }
+/* Service Cards */
+.service-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 5px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
 
-   .service-card img {
-      width: 100%;
-      height: auto;
-      transition: transform 0.3s ease-in-out;
-   }
+.service-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
 
-   .service-card .card-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      text-align: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0.3s, opacity 0.3s ease-in-out;
-   }
+.service-card .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}
 
-   .service-card:hover {
-      transform: translateY(-5px); /* Slight lift effect when hovering */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow */
-   }
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
-   .service-card:hover img {
-      transform: scale(1.05); /* Slight zoom effect on image */
-   }
+.service-card:hover img {
+    transform: scale(1.05);
+}
 
-   .service-card:hover .card-content {
-      visibility: visible;
-      opacity: 1;
-   }
+.service-card:hover .card-content {
+    visibility: visible;
+    opacity: 1;
+}
 
-   .service-card a {
-      text-decoration: none;
-      display: block;
-      position: relative;
-   }
+.service-card a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
 
-   .card-content h3 {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-bottom: 10px;
-   }
+/* Service Card Content */
+.card-content h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-   .card-content p {
-      font-size: 1em;
-      margin-bottom: 20px;
-   }
+.card-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
 
-   footer {
+
+footer {
     background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     flex-shrink: 0;
-   }
+}
 
+.hero {
+    border-top: 1px solid #ddd;
+    background: url('../img/hero.avif') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fbff04;
+}
+
+.txt-hero {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.success-stories {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.success-stories h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.success-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.success-card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.success-card:hover {
+    transform: translateY(-5px);
+}
+
+.success-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff3928;
+}
+
+.success-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonials {
+    background-color: #fafafa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.testimonial .client-name {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff3928;
+}
+
+@media (max-width: 768px) {
+    .success-stories h2,
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+
+    .success-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.message {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
