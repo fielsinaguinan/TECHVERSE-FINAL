@@ -114,3 +114,112 @@ main p {
         font-size: 0.95rem;
     }
 }
+
+/* Blockchain Page Specific Styling */
+#blockchain-title {
+    font-size: 2.8rem;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#blockchain-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* List of Blockchain Services Styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+ul li {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    #blockchain-title {
+        font-size: 2.2rem;
+    }
+
+    #blockchain-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    ul li {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    main p {
+        font-size: 0.95rem;
+    }
+}
+
