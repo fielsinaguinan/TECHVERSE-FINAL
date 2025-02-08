@@ -249,7 +249,7 @@ footer {
 
 .hero {
     border-top: 1px solid #ddd;
-    background: url('../img/hero.avif') center/cover no-repeat;
+    background: url('./img/hero.avif') center/cover no-repeat;
     height: 50vh;
     display: flex;
     justify-content: center;
