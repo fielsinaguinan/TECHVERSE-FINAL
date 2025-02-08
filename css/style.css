@@ -248,7 +248,7 @@ footer {
 
 .hero {
     border-top: 1px solid #ddd;
-    background-image: url('/img/hero.avif');
+    background-image: url('./img/hero.avif');
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -270,7 +270,7 @@ footer {
     border-top: 1px solid #ddd;
     text-align: center;
     height: 80vh;
-    background-image: url('/img/success.avif');
+    background-image: url('./img/success.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
