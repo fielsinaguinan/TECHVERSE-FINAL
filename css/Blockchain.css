@@ -1,145 +1,116 @@
-/* Reset some basic styling */
+/* General Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and Basic Layout */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    padding: 20px;
 }
 
-/* Navbar styling */
-.navbar {
-    background-color: #333;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar .logo {
-    width: 150px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 15px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-select#languageSwitcher {
-    padding: 5px;
-}
-
-/* Header for service pages */
-h1 {
+/* Main Title Styling */
+#blockchain-title {
     text-align: center;
-    font-size: 2.5rem;
     margin-top: 30px;
-    color: #444;
-}
-
-/* Main content section for the service */
-.service-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-}
-
-.service-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.service-header img {
-    max-width: 45%;
-    border-radius: 8px;
-}
-
-.service-description {
-    max-width: 50%;
-}
-
-.service-description h2 {
-    font-size: 2rem;
     margin-bottom: 15px;
-    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.service-description p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #555;
+/* Main Description Styling */
+#blockchain-description {
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/* Button for more information or contact */
-.service-description .btn {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-top: 20px;
+/* Section Title Styling */
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
 }
 
-.service-description .btn:hover {
-    background-color: #0056b3;
+/* List of Blockchain Solutions Styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: #fff;
+ul li {
+    background-color: #fff;
     padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for List Items */
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sub-Heading Styling */
+h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
-footer p {
-    margin: 5px 0;
+/* Subtext Description Styling */
+main p {
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Responsive design for mobile */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
-    .service-container {
-        padding: 15px;
+    /* Main Title and Description */
+    #blockchain-title {
+        font-size: 2.2rem;
     }
 
-    .service-header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-header img {
-        max-width: 100%;
+    #blockchain-description {
         margin-bottom: 20px;
     }
 
-    .service-description {
-        max-width: 100%;
+    /* Section Title */
+    .section-title {
+        font-size: 1.8rem;
     }
 
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
+    /* List Styling */
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    ul li {
+        padding: 15px;
+    }
+
+    /* Sub-heading and Paragraph */
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    main p {
+        font-size: 0.95rem;
     }
 }
