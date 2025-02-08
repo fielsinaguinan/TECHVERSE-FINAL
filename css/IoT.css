@@ -159,4 +159,27 @@ ul li {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
+}
+
+/* Back Button Styling */
+.back-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
    
