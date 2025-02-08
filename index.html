@@ -7,25 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/slideshow.js" defer></script>
     <script src="js/language.js" defer></script>
-    <script src="js/script.js" defer></script>
-</head>
+    <script src="js/script.js" defer></script> </head>
 <body>
-    <nav class="navbar">
-        <img src="img/logo.png" alt="TechVerse Logo" class="logo">
-        <div class="nav-links">
-            <a href="index.html" id="nav-home">Home</a>
-            <a href="about.html" id="nav-about">About</a>
-            <a href="services.html" id="nav-services">Services</a>
-            <a href="contact.html" id="nav-contact">Contact</a>
-        </div>
-        <select id="languageSwitcher">
-            <option value="en">English</option>
-            <option value="zh">中文</option>
-            <option value="jp">日本語</option>
-        </select>
-    </nav>
-
-    <main>
+<nav class="navbar">
+    <img src="img/logo.png" alt="TechVerse Logo" class="logo">
+    <div class="nav-links">
+        <a href="index.html" id="nav-home">Home</a>
+        <a href="about.html" id="nav-about">About</a>
+        <a href="services.html" id="nav-services">Services</a>
+        <a href="contact.html" id="nav-contact">Contact</a>
+    </div>
+    <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="zh">中文</option>
+        <option value="jp">日本語</option>
+    </select>
+</nav>
+<main>
+    <div class="container">
         <section class="slideshow-container">
             <div class="slide fade">
                 <img src="img/slideshow1.webp" alt="TechVerse Innovation Slide 1">
@@ -41,109 +40,86 @@
                 <a href="about.html" id="learn-more-link" class="button">Learn More</a>
             </div>
         </section>
-
         <section class="hero">
             <div class="container">
-              <h1>
-                Empowering Philippine Businesses with IoT, Blockchain, and AI  
-              </h1>
-              <p>
-                From automation to security, we help companies future-proof their operations with cutting-edge technology.
-              </p>
-              <a href="#success-stories" class="button">
-                Explore Success Stories
-              </a>
+                <h1 id="hero-title">Empowering Philippine Businesses with IoT, Blockchain, and AI</h1>
+                <p id="hero-description">From automation to security, we help companies future-proof their operations with cutting-edge technology.</p>
+                <a href="#success-stories" id="explore-success-stories" class="button">Explore Success Stories</a>
             </div>
-          </section>
-
-          <div class="card">
+        </section>
+        <div class="card">
             <div class="txt">
-            <h3>📡 IoT: Smart Logistics in Metro Manila</h3>
-            <p><strong>Client:</strong> FastTrack Cargo Solutions</p>
-            <p>Implemented IoT-powered fleet tracking and warehouse automation.</p>
-            <p><strong>Results:</strong> Reduced delivery delays by 30%, saving ₱5M annually.</p>
+                <h3 id="card-1-title">📡 IoT: Smart Logistics in Metro Manila</h3>
+                <p><strong id="card-1-client">Client:</strong> FastTrack Cargo Solutions</p>
+                <p id="card-1-description">Implemented IoT-powered fleet tracking and warehouse automation.</p>
+                <p><strong id="card-1-results">Results:</strong> <span id="card-1-results-text">Reduced delivery delays by 30%, saving ₱5M annually.</span></p>
+            </div>
+            <img src="./img/Iot.avif" alt="Iot">
         </div>
-        <img src="./img/Iot.avif" alt="Iot">
-          </div>
 
-          <div class="card">
+        <div class="card">
             <div class="txt">
-            <h3>🔗 Blockchain: Secure Financial Transactions in Cebu</h3>
-            <p><strong>Client:</strong> Cebu Digital Bank</p>
-            <p>Implemented blockchain authentication, reducing fraud by 80%.</p>
-            <p><strong>Results:</strong> Faster transactions, 20% more new customers.</p>
+                <h3 id="card-2-title">🔗 Blockchain: Secure Financial Transactions in Cebu</h3>
+                <p><strong id="card-2-client">Client:</strong> Cebu Digital Bank</p>
+                <p id="card-2-description">Implemented blockchain authentication, reducing fraud by 80%.</p>
+                <p><strong id="card-2-results">Results:</strong> <span id="card-2-results-text">Faster transactions, 20% more new customers.</span></p>
+            </div>
+            <img src="./img/blockchain.avif" alt="blockchain">
         </div>
-        <img src="./img/blockchain.avif" alt="blockchain">
-          </div>
 
-          <div class="card">
+        <div class="card">
             <div class="txt">
-            <h3>🤖 AI: Smart Retail Automation in Davao</h3>
-            <p><strong>Client:</strong> OneMart Superstores</p>
-            <p>Integrated AI for demand forecasting and checkout automation.</p>
-            <p><strong>Results:</strong> Reduced waste by 50%, increasing profits by ₱3M.</p>
+                <h3 id="card-3-title">🤖 AI: Smart Retail Automation in Davao</h3>
+                <p><strong id="card-3-client">Client:</strong> OneMart Superstores</p>
+                <p id="card-3-description">Integrated AI for demand forecasting and checkout automation.</p>
+                <p><strong id="card-3-results">Results:</strong> <span id="card-3-results-text">Reduced waste by 50%, increasing profits by ₱3M.</span></p>
+            </div>
+            <img src="./img/AI.avif" alt="AI">
         </div>
-        <img src="./img/AI.avif" alt="AI">
-          </div>
-      
-          <section class="#success-stories">
-            <h2>Success Stories</h2>
+        <section class="#success-stories">
+            <h2 id="success-stories-title">Success Stories</h2>
             <div class="success-grid">
                 <div class="success-card">
-                    <h3>AI Chatbots Transforming E-Commerce</h3>
-                    <p>Our AI-driven chatbot, implemented for <strong>ShopLocalPH</strong>, handles over <strong>20,000 customer inquiries daily</strong>.  
-                    This led to a <strong>30% reduction</strong> in response time and a <strong>50% boost</strong> in customer satisfaction, helping businesses automate customer support.</p>
+                    <h3 id="success-story-1-title">AI Chatbots Transforming E-Commerce</h3>
+                    <p id="success-story-1-description">Our AI-driven chatbot, implemented for ShopLocalPH, handles over 20,000 customer inquiries daily. This led to a 30% reduction in response time and a 50% boost in customer satisfaction, helping businesses automate customer support.</p>
                 </div>
                 <div class="success-card">
-                    <h3>Smart Logistics with IoT</h3>
-                    <p>Through our IoT-powered fleet management solution, <strong>LogiTrackPH</strong> reduced delivery delays by <strong>45%</strong>.  
-                    Real-time GPS tracking and automated route optimization helped improve efficiency and lower fuel costs.</p>
+                    <h3 id="success-story-2-title">Smart Logistics with IoT</h3>
+                    <p id="success-story-2-description">Through our IoT-powered fleet management solution, LogiTrackPH reduced delivery delays by 45%. Real-time GPS tracking and automated route optimization helped improve efficiency and lower fuel costs.</p>
                 </div>
                 <div class="success-card">
-                    <h3>AI-Powered Fraud Detection for Banks</h3>
-                    <p>By implementing AI fraud detection, <strong>MetroBank Secure</strong> successfully prevented over <strong>₱50M worth of fraudulent transactions</strong> in the first quarter alone.  
-                    Machine learning algorithms now detect suspicious activity in real time, protecting thousands of customers.</p>
+                    <h3 id="success-story-3-title">AI-Powered Fraud Detection for Banks</h3>
+                    <p id="success-story-3-description">By implementing AI fraud detection, MetroBank Secure successfully prevented over ₱50M worth of fraudulent transactions in the first quarter alone. Machine learning algorithms now detect suspicious activity in real time, protecting thousands of customers.</p>
                 </div>
             </div>
         </section>
-        
-        
         <section class="testimonials">
-            <h2>What Our Clients Say</h2>
+            <h2 id="testimonials-title">What Our Clients Say</h2>
             <div class="testimonial-container">
                 <div class="testimonial">
-                    <p>“Their IoT solutions transformed our logistics. Highly recommended!”</p>
-                    <p class="client-name">– Juan Dela Cruz, CEO of SmartLogiPH</p>
+                    <p id="testimonial-1">“Their IoT solutions transformed our logistics. Highly recommended!”</p>
+                    <p id="testimonial-1-author" class="client-name">– Juan Dela Cruz, CEO of SmartLogiPH</p>
                 </div>
                 <div class="testimonial">
-                    <p>“Blockchain security was a game-changer for us. Great experience!”</p>
-                    <p class="client-name">– Maria Santos, CTO of FinTechPH</p>
+                    <p id="testimonial-2">“Blockchain security was a game-changer for us. Great experience!”</p>
+                    <p id="testimonial-2-author" class="client-name">– Maria Santos, CTO of FinTechPH</p>
                 </div>
             </div>
         </section>
-        
-
-          <section class="message">
+        <section class="message">
             <div class="container">
-              <h2>Ready to Future-Proof Your Business?</h2>
-              <p>
-                Whether it’s IoT, Blockchain, or AI, we can help you scale your business with cutting-edge solutions.
-              </p>
-              <a href="/contact">
-                Get a Free Consultation
-              </a>
+                <h2 id="message-title">Ready to Future-Proof Your Business?</h2>
+                <p id="message-description">Whether it’s IoT, Blockchain, or AI, we can help you scale your business with cutting-edge solutions.</p>
+                <a href="/contact" id="get-consultation">Get a Free Consultation</a>
             </div>
-          </section>
-            </div>
-          </section>
-          
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>© 2025 TechVerse Innovations</p>
-            <p>Los Angeles • Manila • Japan</p>
-        </div>
-    </footer>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="footer-content">
+        <p id="footer-text">© 2025 TechVerse Innovations</p>
+        <p id="footer-locations">Los Angeles • Manila • Japan</p>
+    </div>
+</footer>
 </body>
 </html>
