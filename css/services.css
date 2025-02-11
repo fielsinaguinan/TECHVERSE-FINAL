@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container { /* If you need a container for main content */
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    color: black; /* Example: Blue headings */
+}
+
+h2 {
+    font-weight: bold;
+    color: black; /* Example: Blue headings */
+}
+
+h3 {
+    font-weight: bold;
+    color: black; /* Example: Blue headings */
+}
+
+/* Navbar Styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    max-height: 80px;
+} 
+
+.nav-links {
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 2rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ff3928;
+    text-decoration: none;
+}
+
+/* Language Switcher */
+#languageSwitcher {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    appearance: none;
+}
+
+#languageSwitcher:hover {
+    background-color: #f5f5f5;
+}
+
+#languageSwitcher:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 57, 40, 0.3);
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+#services-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Spacing between grid items */
+}
+
+.service-card {
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflowing image */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.service-card:hover.service-img {
+    transform: scale(1.1);
+}
+
+.service-card a {
+    display: block; /* Make the entire card clickable */
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.service-img {
+    width: 200px; /* Adjust icon size */
+    height: 200px;
+    margin: 20px auto; /* Center the icon with margin */
+    padding: 15px; /* Add padding around the icon */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+
+
+/* Footer Styles (reusing from Blockchain.css is a good idea) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Back to Top Button (reusing from Blockchain.css is a good idea) */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+#backToTopBtn:hover {
+    opacity: 1;
+}
+
+/* Responsive Design (Example) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}

@@ -122,7 +122,7 @@ main {
     left: 0;
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #3498db, #2980b9);
+    background: linear-gradient(90deg, #f5f5f5, #d91c0d);
 }
 
 /* Services Grid */
@@ -173,7 +173,7 @@ main {
     content: '→';
     position: absolute;
     left: 0;
-    color: #3498db;
+    color: #ff3928;
 }
 
 /* Responsive Design */

@@ -5,16 +5,50 @@
     box-sizing: border-box;
 }
 
+/* Navbar Styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-height: 80px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    margin-left: 2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: #ff3928;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: white;
+    color: white;
     line-height: 1.6;
     padding: 20px;
 }
 
 /* Main Title Styling */
-#iot-title {
+#blockchain-title {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -23,7 +57,7 @@ body {
 }
 
 /* Main Description Styling */
-#iot-description {
+#blockchain-description {
     line-height: 1.7;
     text-align: center;
     margin-bottom: 30px;
@@ -37,7 +71,7 @@ body {
     font-weight: bold;
 }
 
-/* List of IoT Solutions Styling */
+/* List of Blockchain Solutions Styling */
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -53,7 +87,7 @@ ul li {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -83,11 +117,11 @@ main p {
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     /* Main Title and Description */
-    #iot-title {
+    #blockchain-title {
         font-size: 2.2rem;
     }
 
-    #iot-description {
+    #blockchain-description {
         margin-bottom: 20px;
     }
 
@@ -115,10 +149,10 @@ main p {
     }
 }
 
-/* IoT Page Specific Styling */
-#iot-title {
+/* Blockchain Page Specific Styling */
+#blockchain-title {
     font-size: 2.8rem;
-    color: #333;
+    color: black;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -126,9 +160,9 @@ main p {
     text-transform: uppercase;
 }
 
-#iot-description {
+#blockchain-description {
     font-size: 1.1rem;
-    color: #555;
+    color: black;
     line-height: 1.7;
     text-align: center;
     margin-bottom: 30px;
@@ -136,14 +170,14 @@ main p {
 
 .section-title {
     font-size: 2rem;
-    color: #007BFF;
+    color: black;
     margin-top: 40px;
     margin-bottom: 15px;
     text-align: center;
     font-weight: bold;
 }
 
-/* List of IoT Solutions Styling */
+/* List of Blockchain Services Styling */
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -159,9 +193,39 @@ ul li {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Back Button Styling */
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main p {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    /* Back Button Styling */
 .back-button-container {
     text-align: center;
     margin-top: 30px;
@@ -182,4 +246,20 @@ ul li {
     background-color: #0056b3;
 }
 
-   
+#backToTopBtn {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer; /* Make it look like a clickable element */
+}
+
+  #backToTopBtn:hover {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black; /* Darker on hover */
+}

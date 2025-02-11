@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechVerse Innovations - Contact</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 <nav class="navbar">
@@ -26,13 +26,25 @@
 
 <main>
     <h1 id="contact-title">Contact Us</h1>
-    <form>
-        <label for="name" id="contact-name-label">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email" id="contact-email-label">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="submit" value="Submit" id="contact-submit-button">
+    <p>Have questions? We'd love to hear from you!</p> 
+    <form action="https://formspree.io/your-formspree-endpoint" method="POST"> 
+        <label for="name" id="contact-name-label">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email" id="contact-email-label">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="message" id="contact-message-label">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Write your message here" required></textarea><br><br>
+
+        <input type="submit" value="Send Message" id="contact-submit-button">
     </form>
+
+    <div class="contact-info">
+        <h3>Other ways to reach us:</h3>
+        <p>Phone: (+63) 123-456-7890</p>
+        <p><a href="https://www.facebook.com/your-facebook-page">Facebook</a> | <a href="https://twitter.com/your-twitter-profile">Twitter</a></p>
+    </div>
 </main>
 
 <footer>
@@ -43,7 +55,7 @@
 </footer>
 
 <script src="js/language.js"></script>
+<script src="js/script.js"></script>
 </body>
-</html>
-</body>
+<img src="img/backtotop.png" id="backToTopBtn" alt="Back to Top"> 
 </html>

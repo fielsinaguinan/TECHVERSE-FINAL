@@ -254,7 +254,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fbff04;
+    color: white;
 }
 
 .txt-hero {
@@ -388,3 +388,21 @@ footer {
         align-items: center;
     }
 }
+  
+  #backToTopBtn {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer; /* Make it look like a clickable element */
+  }
+
+  #backToTopBtn:hover {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black; /* Darker on hover */
+  }
